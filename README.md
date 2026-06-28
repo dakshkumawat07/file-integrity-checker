@@ -1,76 +1,104 @@
-# 🔒 File Integrity Checker
+# 🔐 File Integrity Checker V2
 
-A Python-based cybersecurity tool that uses the SHA-256 cryptographic hashing algorithm to verify file integrity and detect unauthorized modifications.
+> A professional-grade file integrity monitoring tool with GUI interface,
+> built as part of my cybersecurity learning journey for IIT Kanpur B.Cyber.
 
-## 📌 Overview
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Security](https://img.shields.io/badge/Security-File%20Integrity-red)
+![GUI](https://img.shields.io/badge/GUI-Tkinter-green)
+![PDF](https://img.shields.io/badge/Reports-PDF-orange)
 
-File Integrity Checker helps users determine whether a file has been altered by comparing its cryptographic hash values. This project demonstrates core cybersecurity concepts including hashing, integrity verification, and tamper detection.
+---
+
+## 🆕 What's New in V2
+
+| Feature | V1 | V2 |
+|---------|----|----|
+| Interface | CLI only | ✅ GUI + CLI |
+| Algorithms | SHA-256 only | ✅ MD5, SHA-1, SHA-256, SHA-512 |
+| File Support | Single file | ✅ Batch verification |
+| Reports | Terminal output | ✅ PDF export |
+
+---
 
 ## ✨ Features
 
-- Generate SHA-256 hashes for files
-- Verify file integrity
-- Detect unauthorized file modifications
-- Lightweight and beginner-friendly
-- Demonstrates practical cybersecurity concepts
+- 🖥️ **Clean dark-themed GUI** built with Tkinter
+- 🔑 **4 hashing algorithms** — MD5, SHA-1, SHA-256, SHA-512
+- 📂 **Batch file monitoring** — select multiple files at once
+- 💾 **Baseline saved to JSON** — persistent across sessions
+- ❌ **Instant tamper detection** — flags any file modification
+- 📄 **PDF report export** — professional integrity reports
 
-## 🛠️ Technologies Used
+---
 
-- Python 3
-- hashlib (Built-in Python Library)
+## 🚀 Installation & Usage
 
-## 📂 Project Structure
-
-```
-File-Integrity-Checker/
-│
-├── file_integrity_checker.py
-├── sample.txt
-├── README.md
-└── LICENSE
-```
-
-## 🚀 How to Run
-
-### 1. Clone the Repository
-
+### Install dependencies
 ```bash
-git clone https://github.com/dakshkumawat07/File-Integrity-Checker.git
+pip install reportlab
 ```
 
-### 2. Navigate to Project Folder
-
+### Run the tool
 ```bash
-cd File-Integrity-Checker
+python3 file_integrity.py
 ```
 
-### 3. Run the Program
+### How to use
+1. 📂 Click **Select Files** to choose files to monitor
+2. 🔑 Choose your **hashing algorithm** (SHA-256 recommended)
+3. 💾 Click **Save Baseline** to record original hashes
+4. 🔍 Click **Verify Files** anytime to detect changes
+5. 📄 Click **Export PDF** to generate an integrity report
 
-```bash
-python file_integrity_checker.py
-```
+---
 
-## 🔐 Cybersecurity Concepts Demonstrated
+## 🧠 Concepts Learned
 
-- Cryptographic Hashing
-- SHA-256 Algorithm
-- Data Integrity Verification
-- Tamper Detection
-- Digital Fingerprinting
+- 🔐 Cryptographic hashing (MD5, SHA-1, SHA-256, SHA-512)
+- 🛡️ File integrity monitoring techniques
+- 🖥️ GUI development with Tkinter
+- 📄 PDF generation with ReportLab
+- 🔍 Detecting unauthorized file modifications
+- 📦 JSON for persistent data storage
 
-## 📈 Future Improvements
+---
 
-- Support for multiple hashing algorithms (MD5, SHA-1, SHA-512)
-- GUI interface using Tkinter
-- Batch file verification
-- Integrity reports in PDF format
+## 📸 Screenshots
+
+### ✅ File Unchanged
+> Hash matches baseline — file is safe
+
+### ❌ Tampering Detected
+> Hash mismatch detected — file has been modified
+
+---
+## 🔍 How It Works in Action
+
+### ✅ File Unchanged
+When you verify a file that hasn't been modified,
+the tool computes its current hash and compares it
+with the saved baseline hash. If they match perfectly,
+it confirms the file is safe and untampered.
+
+### ❌ Tampering Detected
+If any change is made to the file — even a single
+character added or removed — the hash changes completely.
+The tool instantly flags it as MODIFIED, proving
+unauthorized changes have occurred.
+
+### 📄 PDF Report
+After verification, you can export a detailed PDF report
+containing the file name, expected hash, current hash,
+status, and timestamp — useful as forensic evidence.
+---
+
+## ⚠️ Legal Notice
+This tool is intended for **educational purposes only**.
+Only monitor files you own or have explicit permission to monitor.
+
+---
 
 ## 👨‍💻 Author
-
-**Daksh Kumawat**
-
-- GitHub: https://github.com/dakshkumawat07
-
-## ⭐ Support
-
-If you found this project useful, consider giving it a star on GitHub.
+**Daksh Kumawat** | Cybersecurity Enthusiast
+🔗 [GitHub](https://github.com/dakshkumawat07)
