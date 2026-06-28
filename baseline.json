@@ -1,0 +1,7 @@
+{
+    "/home/kali/IITK_BCyber/file_integrity_checker/testfile.txt": {
+        "hash": "c87e2ca771bab6024c269b933389d2a92d4941c848c52f155b9b84e1f109fe35",
+        "algorithm": "sha256",
+        "timestamp": "2026-06-28 12:26:34.087471"
+    }
+}
